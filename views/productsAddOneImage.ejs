@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <div class="container">
+                <div class="row mt-5">
+                    <h2>Productos con una sola imagen</h2>
+                    <hr>
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre del Producto</label>
+                                    <input type="text" name="name" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Subir Una Imagen</label>
+                                    <input type="file" id="formFile" class="form-control" name="image">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-dark">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                crossorigin="anonymous"></script>
+    </body>
+
+</html>
