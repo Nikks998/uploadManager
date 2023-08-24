@@ -1,1 +1,12 @@
-[]
+[
+   {
+      "id": 1,
+      "name": "Lamborghini 1",
+      "image": "1692907384558_products_.webp"
+   },
+   {
+      "id": "[object Object]1",
+      "name": "Lamborghini 2",
+      "image": "1692907401217_products_.jpg"
+   }
+]
