@@ -12,12 +12,12 @@ module.exports = {
         const products = readJSON('productsOneImage.json')
 
         products.push({
-            id: products.length ? products[products.length - 1] + 1 : 1,
+            id: products.length ? products[products.length - 1].id + 1 : 1,
             name: req.body.name,
             image: req.file.filename
         })
 
-        writeJSON(products, 'productsOneImage.json')
+        writeJSON(products, 'productsOneImage.json')    
 
         return res.redirect('/')
     },
